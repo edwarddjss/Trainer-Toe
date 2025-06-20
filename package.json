@@ -1,0 +1,36 @@
+{
+  "name": "trainertoe",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist tts_cache trainertoe.db"
+  },
+  "keywords": ["discord", "bot", "fitness", "workout", "voice", "tts", "trainer", "exercise", "health"],
+  "author": "Trainer Toe Contributors",
+  "license": "MIT",
+  "description": "Intelligent Discord fitness bot with voice-guided workouts and personalized coaching",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/trainertoe.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.18.0",
+    "discord.js": "^14.20.0",
+    "dotenv": "^16.5.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@types/sqlite3": "^3.1.11",
+    "nodemon": "^3.1.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
